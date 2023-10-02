@@ -31,7 +31,7 @@ public class ListernerImplementation extends BaseClass implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		String name = result.getName();
-		SimpleDateFormat sdf = new SimpleDateFormat("ddmmyyyyhhmmss");
+		SimpleDateFormat sdf = new SimpleDateFormat(" dd-mm-yyyy hhmmss");
 		String timestamp = sdf.format(new Date());
 		TakesScreenshot t = (TakesScreenshot)driver;
 		File src = t.getScreenshotAs(OutputType.FILE);
