@@ -26,7 +26,6 @@ public class CreateCustomer extends BaseClass{
 	tp.getAddnewbtn().click();
 	tp.getNewcust().click();
 	FileLibrary f = new FileLibrary();
-
 	String customername = f.readDataFromExcel("customerdetails", 1, 1);
 	Thread.sleep(5000);
 	System.out.println(customername);

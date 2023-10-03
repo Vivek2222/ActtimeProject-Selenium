@@ -8,70 +8,54 @@
       <![CDATA[Browser launched succeefully]]>
     </line>
     <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
       <![CDATA[Database disconnect successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-10-02T22:48:33 IST" name="Default suite" finished-at="2023-10-02T22:48:57 IST" duration-ms="24758">
+  <suite started-at="2023-10-03T12:54:15 IST" name="Default suite" finished-at="2023-10-03T12:54:37 IST" duration-ms="22340">
     <groups>
     </groups>
-    <test started-at="2023-10-02T22:48:33 IST" name="Default test" finished-at="2023-10-02T22:48:57 IST" duration-ms="24758">
+    <test started-at="2023-10-03T12:54:15 IST" name="Default test" finished-at="2023-10-03T12:54:37 IST" duration-ms="22340">
       <class name="com.Acttime.TestScripts.CreateCustomer">
-        <test-method is-config="true" signature="databaseconnection()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@5c7933ad]" started-at="2023-10-02T22:48:33 IST" name="databaseconnection" finished-at="2023-10-02T22:48:33 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="databaseconnection()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@4b8d604b]" started-at="2023-10-03T12:54:15 IST" name="databaseconnection" finished-at="2023-10-03T12:54:15 IST" duration-ms="14" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[database connected]]>
             </line>
           </reporter-output>
         </test-method> <!-- databaseconnection -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@5c7933ad]" started-at="2023-10-02T22:48:33 IST" name="launchbrowser" finished-at="2023-10-02T22:48:47 IST" duration-ms="14206" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@4b8d604b]" started-at="2023-10-03T12:54:15 IST" name="launchbrowser" finished-at="2023-10-03T12:54:28 IST" duration-ms="13439" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser launched succeefully]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="createcust()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@5c7933ad]" started-at="2023-10-02T22:48:47 IST" name="createcust" finished-at="2023-10-02T22:48:57 IST" duration-ms="10131" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method is-config="true" signature="LoginToActtime()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@4b8d604b]" started-at="2023-10-03T12:54:28 IST" name="LoginToActtime" finished-at="2023-10-03T12:54:29 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LoginToActtime -->
+        <test-method signature="createcust()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@4b8d604b]" started-at="2023-10-03T12:54:29 IST" name="createcust" finished-at="2023-10-03T12:54:36 IST" duration-ms="7092" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[.='Tasks']"}
-  (Session info: chrome=117.0.5938.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [746ff27c1c0dbc2ca8f4cfb014a9113c, findElement {using=xpath, value=//div[.='Tasks']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50973}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50973/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 746ff27c1c0dbc2ca8f4cfb014a9113c]]>
+              <![CDATA[org/apache/xmlbeans/XmlException]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[.='Tasks']"}
-  (Session info: chrome=117.0.5938.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [746ff27c1c0dbc2ca8f4cfb014a9113c, findElement {using=xpath, value=//div[.='Tasks']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50973}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50973/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 746ff27c1c0dbc2ca8f4cfb014a9113c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy20.click(Unknown Source)
-at com.Acttime.TestScripts.CreateCustomer.createcust(CreateCustomer.java:24)
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/xmlbeans/XmlException
+at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.createWorkbook(XSSFWorkbookFactory.java:118)
+at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.create(XSSFWorkbookFactory.java:98)
+at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.create(XSSFWorkbookFactory.java:36)
+at org.apache.poi.ss.usermodel.WorkbookFactory.lambda$create$2(WorkbookFactory.java:224)
+at org.apache.poi.ss.usermodel.WorkbookFactory.wp(WorkbookFactory.java:329)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:224)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+at com.Acttime.GenericLibrary.FileLibrary.readDataFromExcel(FileLibrary.java:22)
+at com.Acttime.TestScripts.CreateCustomer.createcust(CreateCustomer.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -100,34 +84,59 @@ at org.testng.TestNG.run(TestNG.java:1082)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.apache.xmlbeans.XmlException
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 37 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createcust -->
-        <test-method is-config="true" signature="logoutFromActtime()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@5c7933ad]" started-at="2023-10-02T22:48:57 IST" name="logoutFromActtime" finished-at="2023-10-02T22:48:57 IST" duration-ms="118" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method is-config="true" signature="logoutFromActtime()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@4b8d604b]" started-at="2023-10-03T12:54:36 IST" name="logoutFromActtime" finished-at="2023-10-03T12:54:37 IST" duration-ms="1139" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Unable to find element with locator By.xpath: //div[.='Tasks']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[element click intercepted: Element <div class="label">...</div> is not clickable at point (733, 14). Other element would receive the click: <img src="/img/default/dialogs/exitconfirm/shade.png?hash=1846506722" id="muar" style="display: block;">
+  (Session info: chrome=117.0.5938.92)
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53da51d5e112e49f964ee8fa574c8bc2, clickElement {id=66D0A3161749D4CF5D1C7F0CF4AA0B79_element_251}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60342/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (53da51d5e112e49f964ee8fa574c8bc2)] -> xpath: //div[.='Tasks']]
+Session ID: 53da51d5e112e49f964ee8fa574c8bc2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //div[.='Tasks']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="label">...</div> is not clickable at point (733, 14). Other element would receive the click: <img src="/img/default/dialogs/exitconfirm/shade.png?hash=1846506722" id="muar" style="display: block;">
+  (Session info: chrome=117.0.5938.92)
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy20.click(Unknown Source)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53da51d5e112e49f964ee8fa574c8bc2, clickElement {id=66D0A3161749D4CF5D1C7F0CF4AA0B79_element_251}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60342/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (53da51d5e112e49f964ee8fa574c8bc2)] -> xpath: //div[.='Tasks']]
+Session ID: 53da51d5e112e49f964ee8fa574c8bc2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy21.click(Unknown Source)
 at com.Acttime.GenericLibrary.BaseClass.logoutFromActtime(BaseClass.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -164,15 +173,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromActtime -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@5c7933ad]" started-at="2023-10-02T22:48:57 IST" name="closebrowser" finished-at="2023-10-02T22:48:57 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@4b8d604b]" started-at="2023-10-03T12:54:37 IST" name="closebrowser" finished-at="2023-10-03T12:54:37 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="databasedisconnect()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@5c7933ad]" started-at="2023-10-02T22:48:57 IST" name="databasedisconnect" finished-at="2023-10-02T22:48:57 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="databasedisconnect()[pri:0, instance:com.Acttime.TestScripts.CreateCustomer@4b8d604b]" started-at="2023-10-03T12:54:37 IST" name="databasedisconnect" finished-at="2023-10-03T12:54:37 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Database disconnect successfully]]>

@@ -14,7 +14,7 @@ public class TaskPage {
 	@FindBy(xpath = "//div[.='+ New Customer']")
 	private WebElement newcust;
 	
-	@FindBy(xpath = "//input[@placeholder='Enter Customer Name']")
+	@FindBy(xpath = "(//input[@placeholder='Enter Customer Name'])[2]")
 	private WebElement custname;
 	
 	@FindBy(xpath = "//textarea[@placeholder='Enter Customer Description']")
